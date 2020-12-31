@@ -1,0 +1,80 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+</head>
+
+<section id="blog-home">
+    <div class="container-fluid">
+      <div id="carouselExampleSlidesOnly" class="carousel-slide" data-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item" [ngClass]="{active:isFirst}" *ngFor="let dataS of homeData;
+            index as i;first as isFirst">
+            <div class="layer"></div>
+            <img src={{dataS.img}} class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1>{{dataS.title}}</h1>
+              <p>{{dataS.data1}}</p>
+              <p>{{dataS.data2}}</p><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog-posts">
+    <br><br>
+
+    <div class="commonStyle">
+      <div class="card-body">
+        <div class=" card-title">
+          <h2 class="home-title">! Blog Posts ! </h2>
+        </div>
+      </div>       
+      
+      <div class="row card-row" *ngFor="let blog of blogsContent, let index=index">
+        <div class="column col-md-2 col-sm-12" *ngIf="!mobile">{{mobile}}
+          <div class="card card-style h-100"> 
+            <p class="card-text leftpanel">
+              Author: ABC<br>
+              Date : 28th Jul<br>
+              Topic: Test
+            </p>
+          </div>
+        </div>
+        <div class="column col-md-10 col-sm-12">
+          <div class="card card-style container h-100" [routerLink]="[ blog.id ]">
+            <div class="row">
+              <ng-template [ngIf]="mobile" [ngIfElse]="desktopVersion">
+                <div class="card-body">
+                  <h5 class="card-title cardTitle">{{ blog.name }}</h5>
+                  <div class="col-sm-3" >
+                    <img class="imageStyle" src="{{ blog.img }}">
+                  </div>
+                  <div class="col-sm-9">
+                  <p class="card-text">
+                    {{ blogs[index] }}<br>
+                    <a class="read">Read more...</a>
+                  </p>
+                </div>
+                </div>
+              </ng-template>  
+              <ng-template #desktopVersion>
+                <div class="col-md-3" *ngIf="index % 2 === 1">
+                  <img class="imageStyle" src="{{ blog.img }}">
+                </div>
+                <div class="col-md-9 card-body">
+                    <h6 class="card-title cardTitle">{{ blog.name }}</h6>
+                    <p class="card-text">
+                      {{ blogs[index] }}<br>
+                      <a class="read">Read more...</a>
+                    </p>
+                </div>
+                <div class="col-md-3" *ngIf="index % 2 === 0">
+                  <img class="imageStyle" src="{{ blog.img }}">
+                </div>
+              </ng-template>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

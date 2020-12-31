@@ -1,0 +1,440 @@
+//common section
+
+.inherit {
+  background-color: inherit;
+}
+.height-width-100 {
+  height: 100%;
+  width: 100%;
+}
+.home-title {
+  font-size: 36px;
+  padding-bottom: 45px;
+  text-transform: uppercase;
+  font-family: Candara;
+  text-align: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.no-border {
+  border: 0px;
+}
+
+// h1 {
+//   display: block;
+//   font-size: 3em;
+//   margin-top: 0.67em;
+//   margin-bottom: 0.67em;
+//   margin-left: 0;
+//   margin-right: 0;
+//   color:white;
+//   line-height: 1.6;
+//   // font-weight: 600;
+//   font-weight: bold;
+// }
+
+// h2 {
+//   display: block;
+//   font-size: 1.5em;
+//   margin-top: 0.83em;
+//   margin-bottom: 0.83em;
+//   margin-left: 0;
+//   margin-right: 0;
+//   color:white;
+//   font-weight: bold;
+// }
+
+// h3 {
+//   display: block;
+//   font-size: 1.17em;
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+//   margin-left: 0;
+//   margin-right: 0;
+//   color:white;
+//   font-weight: bold;
+// }
+
+// Home CSS
+
+.layer {
+  background: #1c416a9e; // #1c416a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.btn-primary {
+  // background-color: #fb632b !important;
+  background-color: #c8dd82 !important; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.banner {
+  background: url(../../../assets/Images/booksIn.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  // background-color: rgb(151, 148, 148);
+  // background-blend-mode: difference;
+  width: auto;
+  //background-opacity: 0.5;
+  //-moz-backface-visibility: hidden;
+  //background-color: transparent;
+}
+
+
+//Serices CSS
+.service {
+  cursor: pointer;
+}
+.activeService {
+  // background-color: #fb632b;
+  background-color: #c8dd82;
+  border-radius: 5px;
+}
+
+// How it works
+.numdiv{
+  background-color: #1c416a;
+  color: white;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  align-self: center;
+  padding: auto;
+  text-align: center;
+  }
+
+.arrowindicator{
+  background-image: url('https://www.volunteercenter.info/assets/vrline21.jpg');
+ //background-image: url('https://etc.usf.edu/clipart/13100/13117/square_13117_lg.gif');
+//background-image: url('https://illuminateddandelion.files.wordpress.com/2016/03/vertical-line.jpg?w=640');
+//background-image: url('https://www.researchgate.net/profile/Kyriaki_Mikellidou/publication/264201750/figure/fig2/AS:288776888434689@1445861183969/The-vertical-horizontal-illusion-Although-of-equal-lengths-the-vertical-line-looks.png');
+//background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJFBMVEX///8AAADz8/Pg4ODu7u78/PxhYWEdHR1HR0deXl4WFhZDQ0PMRTziAAABEElEQVR4nO3dMW7DQBAEQdmyJVP6/38dk5ECEodeVL1gOtwDAd5u8KHtsbetHnS6r6PVg06nsE9hn8I+hX0K+xT2KeybX3g/Wj0IAAAALvF67r1WDzrd/FcMhX0K+xT2KexT2KewT2Hf/MKfo9WDAAAA4BLzb3yFfQr7FPYp7FPYp7BPYZ/Cvu+j1YMAAABY4vdo9aDTzb/xFfYp7FPYp7BPYZ/CPoV9Cvvm3/gAAAB8Yv43wvNvfIV9CvsU9insU9insE9hn0IAAACYYf6/gubf+Ar7FPYp7FPYp7BPYZ/CvvmF77+99+pBAAAAcIn70epBp5v/iqGwT2Gfwj6FfQr7FPYp7JtfuD32ttWD6PgHFBULY1FUbJQAAAAASUVORK5CYII='); 
+
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2%;
+  
+}
+.grad{
+  background-image: linear-gradient(to right, rgba(225,0,0,1),rgba(225,0,0,0));
+}
+
+.student-tutor-flow{
+  border: 1px solid #c8dd82;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+.flowshadow {
+  // -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  // -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  // box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  // shadow {
+    box-shadow: 0 .15px 10px rgba(0,0,0,.5)!important;
+// }
+}
+
+.verticalAlign-tutor{
+ transform: rotate(270deg);
+ //writing-mode: vertical-lr;
+ //transform-origin: bottom right; 
+ // margin-left: 4rem;
+ position: absolute;
+ margin-left: -356%;
+ letter-spacing: 54px;
+ margin-top: 335%;
+ //@include transform-origin(0 0);
+}
+.verticalAlign{
+  color: #1c416a;
+  transform: rotate(270deg);
+  //writing-mode: vertical-lr;
+  //transform-origin: bottom right; 
+  // margin-left: 4rem;
+  // position: absolute;
+  // margin-left: -356%;
+  letter-spacing: 7px;
+  margin-top: 240%;
+ // margin-bottom: 160%;
+
+  //@include transform-origin(0 0);
+ }
+
+ .image{
+  // border: 1px solid black;
+   border-radius: 5px;
+   overflow: hidden;
+   margin-left: 15px;
+   margin-right: 15px;
+ }
+ .image img {
+  transition: all 2s ease-in-out;
+  border-radius: 5px;
+}
+ .image:hover img {
+     transform: scale(1.5, 1.5);
+     cursor: pointer;
+    border-radius: 5px;
+ }
+
+// FAQ CSS
+.btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.faq {
+  // background-color: lavender;
+  // background: transparent;
+  background: url(../../../assets/Images/banner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+.template_faq {
+  background: #edf3fe none repeat scroll 0 0;
+}
+.panel-group {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.04);
+  margin-bottom: 0;
+  padding: 30px;
+}
+#accordion .panel {
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 0 15px 10px;
+}
+#accordion .panel-heading {
+  border-radius: 30px;
+  padding: 0;
+}
+#accordion .panel-title a {
+  background: #1c416a none repeat scroll 0 0;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px 12px 50px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed {
+  background: #c8dd82 none repeat scroll 0 0;
+  // background:#fb632b none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  color: #333;
+}
+#accordion .panel-title a::after,
+#accordion .panel-title a.collapsed::after {
+  background: #1c416a none repeat scroll 0 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+  color: #fff;
+  content: "";
+  font-family: fontawesome;
+  font-size: 25px;
+  height: 55px;
+  left: -20px;
+  line-height: 55px;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+  transition: all 0.3s ease 0s;
+  width: 55px;
+}
+#accordion .panel-title a.collapsed::after {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  color: #333;
+  content: "";
+}
+#accordion .panel-body {
+  background: transparent none repeat scroll 0 0;
+  border-top: medium none;
+  padding: 20px 25px 10px 9px;
+  position: relative;
+}
+#accordion .panel-body p {
+  border-left: 1px dashed #8c8c8c;
+  padding-left: 25px;
+}
+
+// The team CSS
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+  border-radius: 0.5em;
+}
+
+.control {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  user-select: none;
+  height: 100%;
+  opacity: 80%;
+  transition: opacity 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+
+/* style the arrows */
+.arrowPosition {
+  text-align: center;
+}
+.arrow {
+  display: block;
+  border-left: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  width: 0.4em;
+  height: 0.4em;
+}
+.left {
+  transform: rotate(45deg);
+}
+.right {
+  transform: rotate(225deg);
+}
+
+.img-carousel {
+  max-width: 50px;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+}
+
+.h5-carousel {
+  font-size: 14px;
+  color: #5c5758;
+  line-height: 150%;
+  margin: 15px 0 4px;
+}
+
+.innerSlider-carousel {
+  padding: 32px 15px 0;
+  height: 400px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.slick-slide {
+  outline: none !important;
+}
+
+.spec-customColor {
+  color: #fe4066;
+}
+
+.p-carousel {
+  text-align: left;
+  max-width: 340px;
+  margin: 21px auto 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: #5c5758;
+}
+#myVideo {
+  //position: fixed;
+  position: absolute;
+  right: 0;
+  // bottom: 0;
+  // top: 0;
+  left: 0;
+  min-width: 100%;
+  height: inherit;
+  // min-height: 100%;
+}
+//end of the team css
+// .carousel-inner :focus{
+// border: none;
+// }
+
+// Contact Us
+.form-row > .col,
+.form-row > [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: grey 1px solid !important;
+  color: #1c416a;
+  // box-shadow: #1c416a6e 2px 2px;
+}
+
+.send {
+  // border: #1c416a 1px solid ;
+  color: #1c416a;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #93a35d;
+}
